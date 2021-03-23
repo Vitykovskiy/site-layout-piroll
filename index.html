@@ -5,13 +5,16 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 <div class="container--dark">
     <div class="content-box">
         <div class="home">
             <div class="home__nav">
-                <div class="logo"></div>
+                <div class="logo">
+                    <img class="logo__img" src="icons/logo.png" alt="logo">
+                </div>
                 <div class="home__nav-panel">
                     <div class="home__nav-btn">HOME</div>
                     <div class="home__nav-btn">ABOUT</div>
@@ -19,7 +22,7 @@
                     <div class="home__nav-btn">PROCESS</div>
                     <div class="home__nav-btn">SERVICES</div>
                     <div class="home__nav-btn">TESTIMONIALS</div>
-                    <div class="home__nav-btn">CONTANC</div>
+                    <div class="home__nav-btn">CONTACT</div>
                 </div>
             </div>
             <div class="home__body">
@@ -30,15 +33,15 @@
                         about designing websites and mobile apps.</p>
                 </div>
                 <div class="home__contact-btn-box">
-                    <button class="home__contact-btn">CONTACT US</button>
+                    <button class="button--blue">CONTACT US</button>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div class="container--light">
+<div class="container">
     <div class="content-box">
-        <div class="about__content">
+        <div class="about">
             <div class="header">About Us</div>
             <div class="about__body">
                 <p>Divide have don't man wherein air fourth. Own itself make have night won't make.
@@ -47,7 +50,7 @@
                 </p>
             </div>
             <div class="about__signature">
-                <img src="images/signature.png" alt="about__signature">
+                <img class="about__signature-image" src="images/signature.png" alt="about__signature">
             </div>
         </div>
     </div>
@@ -59,17 +62,26 @@
             <div class="skills__skill-box">
                 <div class="skills__skill-name">UI/UX DESIGN</div>
                 <div class="skills__skill-value">75%</div>
-                <div class="skills__skill-progress">............</div>
+                <div class="skills__skill-progress">
+                    <div class="skills__complete--75"></div>
+                    <div class="skills__not-complete"></div>
+                </div>
             </div>
             <div class="skills__skill-box">
                 <div class="skills__skill-name">WEB DEVELOPMENT</div>
                 <div class="skills__skill-value">90%</div>
-                <div class="skills__skill-progress">...............</div>
+                <div class="skills__skill-progress">
+                    <div class="skills__complete--90"></div>
+                    <div class="skills__not-complete"></div>
+                </div>
             </div>
             <div class="skills__skill-box">
                 <div class="skills__skill-name">MARKETING</div>
                 <div class="skills__skill-value">65%</div>
-                <div class="skills__skill-progress">.........</div>
+                <div class="skills__skill-progress">
+                    <div class="skills__complete--65"></div>
+                    <div class="skills__not-complete"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -117,39 +129,41 @@
     </div>
 </div>
 <div class="container--dark">
-    <div class="album">
-        <div class="album__photos">
-            <div class="album__photo-box">
-                <img src="images/your_img_here_1.png" alt="photo-1" class="album__photo">
+    <div class="content-box">
+        <div class="album">
+            <div class="album__photos">
+                <div class="album__photo-box">
+                    <img src="images/your_img_here_1.png" alt="photo-1" class="album__photo">
+                </div>
+                <div class="album__photo-box">
+                    <img src="images/your_img_here_2.png" alt="photo-2" class="album__photo">
+                </div>
+                <div class="album__photo-box">
+                    <img src="images/your_img_here_1.png" alt="photo-1" class="album__photo">
+                </div>
+                <div class="album__photo-box">
+                    <img src="images/your_img_here_2.png" alt="photo-2" class="album__photo">
+                </div>
+                <div class="album__photo-box">
+                    <img src="images/your_img_here_2.png" alt="photo-2" class="album__photo">
+                </div>
+                <div class="album__photo-box">
+                    <img src="images/your_img_here_1.png" alt="photo-1" class="album__photo">
+                </div>
+                <div class="album__photo-box">
+                    <img src="images/your_img_here_2.png" alt="photo-2" class="album__photo">
+                </div>
+                <div class="album__photo-box">
+                    <img src="images/your_img_here_1.png" alt="photo-1" class="album__photo">
+                </div>
             </div>
-            <div class="album__photo-box">
-                <img src="images/your_img_here_2.png" alt="photo-2" class="album__photo">
+            <div class="album__load-more">
+                <button class="album__load-more-btn">LOAD MORE WORK</button>
             </div>
-            <div class="album__photo-box">
-                <img src="images/your_img_here_1.png" alt="photo-1" class="album__photo">
-            </div>
-            <div class="album__photo-box">
-                <img src="images/your_img_here_2.png" alt="photo-2" class="album__photo">
-            </div>
-            <div class="album__photo-box">
-                <img src="images/your_img_here_1.png" alt="photo-1" class="album__photo">
-            </div>
-            <div class="album__photo-box">
-                <img src="images/your_img_here_2.png" alt="photo-2" class="album__photo">
-            </div>
-            <div class="album__photo-box">
-                <img src="images/your_img_here_1.png" alt="photo-1" class="album__photo">
-            </div>
-            <div class="album__photo-box">
-                <img src="images/your_img_here_2.png" alt="photo-2" class="album__photo">
-            </div>
-        </div>
-        <div class="album__load-more">
-            <button class="album__load-more-btn">LOAD MORE WORK</button>
         </div>
     </div>
 </div>
-<div class="container--light">
+<div class="container">
     <div class="content-box">
         <div class="work-process">
             <div class="header">Our Work Process</div>
@@ -158,7 +172,9 @@
                     third sixth gathered female creeping bearing behold years.</p>
             </div>
             <div class="work-process__video-box">
-                VIDEO
+                <button class="process__video-play-icon">
+                    <div class="process__video-play-triangle"></div>
+                </button>
             </div>
         </div>
     </div>
@@ -244,7 +260,7 @@
 <div class="container--blue">
     <div class="content-box">
         <div class="quotation">
-            <div class="quotation__content">
+            <div class="quotation__body">
                 <div class="quotation__quot">
                     “ Outstanding job and exceeded all expectations. It was a pleasure
                     to work with them on a sizable first project and am looking
@@ -253,14 +269,14 @@
                 <div class="quotation__author">Michael Hopkins</div>
             </div>
             <div class="quotation__switchers-box">
-                <div class="quotation__switcher">*</div>
-                <div class="quotation__switcher">*</div>
-                <div class="quotation__switcher">*</div>
+                <input type="radio" name="quot" id="quot-1" class="quotation__switcher">
+                <input type="radio" name="quot" id="quot-2" class="quotation__switcher">
+                <input type="radio" name="quot" id="quot-3" class="quotation__switcher">
             </div>
         </div>
     </div>
 </div>
-<div class="container--light">
+<div class="container">
     <div class="content-box">
         <div class="clients">
             <div class="client__box">
@@ -297,10 +313,11 @@
                     <input type="text" class="form__field" id="title" placeholder="Your Title">
                 </div>
                 <div class="row">
-                    <input type="text" class="form__field" id="comment" placeholder="Your Comment">
+                    <textarea type="text" maxlength="1000" rows="5" class="form__field comment" id="comment"
+                              placeholder="Your Comment"></textarea>
                 </div>
                 <div class="row">
-                    <input type="submit" class="form__submit-btn" id="submit-button" value="SEND MESSAGE ">
+                    <input type="submit" class="button--blue" id="submit-button" value="SEND MESSAGE ">
                 </div>
             </form>
         </div>
@@ -311,32 +328,34 @@
         <div class="info">
             <div class="info__box">
                 <div class="info__header">Piroll Design, Inc.</div>
-                <div class="info__rights">© 2017 Piroll. All rights reserved.
-                    Designed by robirurk.</div>
-            </div>
-            <div class="info__box">
-                <div class="info__contacts">
-                    hello@pirolltheme.com
-                    +44 987 065 908
+                <div class="info__rights">
+                    <p>© 2017 Piroll. All rights reserved.
+                        Designed by robirurk.</p>
                 </div>
             </div>
             <div class="info__box">
-                <a href="">Projects</a>
-                <a href="">About</a>
-                <a href="">Services</a>
-                <a href="">Career</a>
+                <div class="info__contacts">
+                    <p>hello@pirolltheme.com</p>
+                    <p>+44 987 065 908</p>
+                </div>
             </div>
             <div class="info__box">
-                <a href="">News</a>
-                <a href="">Events</a>
-                <a href="">Contact</a>
-                <a href="">Legals</a>
+                <p>Projects</p>
+                <p>About</p>
+                <p>Services</p>
+                <p>Career</p>
             </div>
             <div class="info__box">
-                <a href="">Facebook</a>
-                <a href="">Twitter</a>
-                <a href="">Instagram</a>
-                <a href="">Dribbble</a>
+                <p>News</p>
+                <p>Events</p>
+                <p>Contact</p>
+                <p>Legals</p>
+            </div>
+            <div class="info__box">
+                <p>Facebook</p>
+                <p>Twitter</p>
+                <p>Instagram</p>
+                <p>Dribbble</p>
             </div>
         </div>
     </div>
